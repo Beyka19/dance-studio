@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WabiSabi — танцевальная студия</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Искры на фоне -->
+<div class="sparkles" aria-hidden="true">
+  <span class="sparkle" style="top:8%;  left:6%;  animation-delay:0s;"></span>
+  <span class="sparkle" style="top:22%; left:92%; animation-delay:0.8s;"></span>
+  <span class="sparkle" style="top:38%; left:18%; animation-delay:1.6s;"></span>
+  <span class="sparkle" style="top:55%; left:88%; animation-delay:0.4s;"></span>
+  <span class="sparkle" style="top:72%; left:10%; animation-delay:2.2s;"></span>
+  <span class="sparkle" style="top:85%; left:80%; animation-delay:1.2s;"></span>
+  <span class="sparkle" style="top:12%; left:48%; animation-delay:2.8s;"></span>
+  <span class="sparkle" style="top:65%; left:52%; animation-delay:0.6s;"></span>
+</div>
+
+<!-- ШАПКА -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="/" class="header__logo">WabiSabi</a>
+    <nav class="header__nav">
+      <a href="#directions">направления</a>
+      <a href="#gallery">галерея</a>
+      <a href="#schedule">расписание</a>
+      <a href="#prices">стоимость</a>
+      <a href="#contacts">контакты</a>
+    </nav>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#directions">направления</a>
+    <a href="#gallery">галерея</a>
+    <a href="#schedule">расписание</a>
+    <a href="#prices">стоимость</a>
+    <a href="#contacts">контакты</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__parallax">
+    <img src="images/hero.jpg" alt="" class="hero__bg">
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">Танцы —<br>это про <em>тебя</em></h1>
+      <p class="hero__subtitle">WabiSabi — танцевальная студия для тех, кто хочет почувствовать свой ритм</p>
+      <button class="btn-shine" data-modal="signup">
+        <span>Записаться на пробное</span>
+        <span class="btn-shine__arrow">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- О НАС -->
+<section class="about reveal" id="about">
+  <div class="container about__inner">
+    <div class="about__left">
+      <p class="section-label">о нас</p>
+      <h2 class="about__title">WabiSabi — больше чем танцы.</h2>
+      <p class="about__text">Мы пространство, где ты можешь быть собой.<br>Где не важен уровень подготовки: возраст или опыт.<br>Важно одно — что ты чувствуешь.</p>
+      <ul class="about__features">
+        <li class="about__feature"><img src="images/icon-support.png" alt="" class="about__icon"><span>Поддержка<br>и принятие</span></li>
+        <li class="about__feature"><img src="images/icon-star.png" alt="" class="about__icon"><span>Профессиональные<br>тренеры</span></li>
+        <li class="about__feature"><img src="images/icon-cozy.png" alt="" class="about__icon"><span>Уютная<br>атмосфера</span></li>
+        <li class="about__feature"><img src="images/icon-community.png" alt="" class="about__icon"><span>Дружеское<br>сообщество</span></li>
+      </ul>
+      <div class="about__buttons">
+        <button class="btn-shine btn-shine--dark" data-modal="signup"><span>Узнать больше</span><span class="btn-shine__arrow">→</span></button>
+        <a href="#gallery" class="btn-ghost">Галерея</a>
+      </div>
+    </div>
+    <div class="about__right">
+      <img src="images/about.jpg" alt="О студии" class="about__img">
+    </div>
+  </div>
+</section>
+
+<!-- НАПРАВЛЕНИЯ -->
+<section class="directions reveal" id="directions">
+  <div class="container">
+    <p class="section-label section-label--light">✦ направления</p>
+    <h2 class="directions__title">Выбери свой <em>стиль</em></h2>
+    <div class="directions__grid">
+      <button class="direction-card" data-video="https://www.youtube.com/embed/sGhkRql-zKM">
+        <img src="images/direction-1.jpg" alt="Hip-Hop" class="direction-card__img">
+        <div class="direction-card__info"><h3>Hip-Hop</h3><p>Энергия. Ритм. Свобода</p><span class="direction-card__play">▶ смотреть видео</span></div>
+      </button>
+      <button class="direction-card" data-video="https://www.youtube.com/embed/GFbjAB9bwSc">
+        <img src="images/direction-2.jpg" alt="Contemporary" class="direction-card__img">
+        <div class="direction-card__info"><h3>Contemporary</h3><p>Глубина. Чувства</p><span class="direction-card__play">▶ смотреть видео</span></div>
+      </button>
+      <button class="direction-card" data-video="https://www.youtube.com/embed/KzdESuVGmSI">
+        <img src="images/direction-3.jpg" alt="K-pop" class="direction-card__img">
+        <div class="direction-card__info"><h3>K-pop</h3><p>Стиль. Выразительность</p><span class="direction-card__play">▶ смотреть видео</span></div>
+      </button>
+      <button class="direction-card" data-video="https://www.youtube.com/embed/K9nzhWqnczg">
+        <img src="images/direction-4.jpg" alt="Jazz-Funk" class="direction-card__img">
+        <div class="direction-card__info"><h3>Jazz-Funk</h3><p>Драйв. Харизма. Характер</p><span class="direction-card__play">▶ смотреть видео</span></div>
+      </button>
+    </div>
+    <div class="directions__more">
+      <button class="btn-ghost btn-ghost--light" data-modal="signup">Все направления →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="gallery reveal" id="gallery">
+  <div class="container">
+    <p class="section-label section-label--light">✦ галерея</p>
+    <h2 class="gallery__title">Атмосфера <em>студии</em></h2>
+    <div class="gallery__grid">
+      <img src="images/gallery-1.jpg" alt="Занятие" class="gallery__item gallery__item--big">
+      <img src="images/gallery-2.jpg" alt="Танец" class="gallery__item">
+      <img src="images/gallery-3.jpg" alt="Тренировка" class="gallery__item">
+      <img src="images/gallery-4.jpg" alt="Танец" class="gallery__item gallery__item--wide">
+      <img src="images/gallery-5.jpg" alt="Dancer" class="gallery__item">
+    </div>
+    <div class="gallery__more">
+      <button class="btn-ghost btn-ghost--light" data-modal="signup">Записаться на занятие →</button>
+    </div>
+  </div>
+</section>
+
+<!-- РАСПИСАНИЕ НА ВСЕ ДНИ -->
+<section class="schedule reveal" id="schedule">
+  <div class="container">
+    <p class="section-label">расписание</p>
+    <h2 class="schedule__title">Расписание <em>занятий</em></h2>
+    
+    <div class="schedule__tabs">
+      <button class="schedule__tab active" data-day="monday">Пн</button>
+      <button class="schedule__tab" data-day="tuesday">Вт</button>
+      <button class="schedule__tab" data-day="wednesday">Ср</button>
+      <button class="schedule__tab" data-day="thursday">Чт</button>
+      <button class="schedule__tab" data-day="friday">Пт</button>
+      <button class="schedule__tab" data-day="saturday">Сб</button>
+      <button class="schedule__tab" data-day="sunday">Вс</button>
+    </div>
+
+    <div class="schedule__table active" data-day-content="monday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>10:00 — 11:30</span><span>Hip-Hop</span><span>Дмитрий Ким</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>18:00 — 19:30</span><span>Contemporary</span><span>Анна Смирнова</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="tuesday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>11:00 — 12:30</span><span>K-pop</span><span>Мария Лазарева</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>19:00 — 20:30</span><span>Jazz-Funk</span><span>Екатерина Волкова</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="wednesday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>09:00 — 10:30</span><span>Утренний Hip-Hop</span><span>Дмитрий Ким</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>17:00 — 18:30</span><span>Contemporary</span><span>Анна Смирнова</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="thursday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>12:00 — 13:30</span><span>K-pop интенсив</span><span>Мария Лазарева</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>20:00 — 21:30</span><span>Jazz-Funk</span><span>Екатерина Волкова</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="friday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>10:00 — 11:30</span><span>Hip-Hop</span><span>Дмитрий Ким</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>18:00 — 19:30</span><span>Jazz-Funk</span><span>Екатерина Волкова</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="saturday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>10:00 — 11:30</span><span>Hip-Hop</span><span>Дмитрий Ким</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>12:00 — 13:30</span><span>K-pop</span><span>Мария Лазарева</span><span>Зал 2</span></div>
+    </div>
+    <div class="schedule__table" data-day-content="sunday">
+      <div class="schedule__row schedule__row--head"><span>Время</span><span>Занятие</span><span>Тренер</span><span>Зал</span></div>
+      <div class="schedule__row"><span>11:00 — 12:30</span><span>Jazz-Funk</span><span>Екатерина Волкова</span><span>Зал 1</span></div>
+      <div class="schedule__row"><span>13:00 — 14:30</span><span>Hip-Hop</span><span>Дмитрий Ким</span><span>Зал 2</span></div>
+    </div>
+
+    <div class="schedule__cta">
+      <button class="btn-shine btn-shine--dark" data-modal="signup"><span>Записаться на занятие</span><span class="btn-shine__arrow">→</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="prices reveal" id="prices">
+  <div class="container">
+    <div class="prices__head">
+      <div>
+        <p class="section-label">цены</p>
+        <h2 class="prices__title">Выбирай удобный формат и начни свой<br>танцевальный путь уже сегодня.</h2>
+      </div>
+      <button class="btn-ghost" data-modal="signup">Записаться →</button>
+    </div>
+    <div class="prices__grid">
+      <div class="price-card">
+        <h3 class="price-card__title">Разовое занятие</h3>
+        <p class="price-card__price">500 ₽</p>
+        <p class="price-card__note">1 занятие</p>
+        <button class="price-card__btn" data-modal="signup">Купить</button>
+      </div>
+      <div class="price-card price-card--popular">
+        <span class="price-card__badge">✦ Популярный</span>
+        <h3 class="price-card__title">Абонемент на 8 занятий</h3>
+        <p class="price-card__price">4 500 ₽</p>
+        <p class="price-card__note">Срок действия 1 месяц</p>
+        <button class="price-card__btn" data-modal="signup">Купить</button>
+      </div>
+      <div class="price-card">
+        <h3 class="price-card__title">Абонемент на 12 занятий</h3>
+        <p class="price-card__price">6 200 ₽</p>
+        <p class="price-card__note">Срок действия 1 месяц</p>
+        <button class="price-card__btn" data-modal="signup">Купить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contacts reveal" id="contacts">
+  <div class="container contacts__inner">
+    <div class="contacts__left">
+      <p class="section-label section-label--light">контакты</p>
+      <h2 class="contacts__title">До <em>связи</em></h2>
+      <ul class="contacts__list">
+        <li>г. Новосибирск, ул. Салтыкова-Щедрина, 1</li>
+        <li><a href="tel:+79527507118">+7 (952) 750-71-18</a></li>
+        <li>wabisabi.dance@gmail.com</li>
+      </ul>
+      <p class="contacts__socials-title">Наши социальные сети</p>
+      <div class="contacts__socials">
+        <a href="https://vk.ru/bkkkkkkkkkkkkkkk" target="_blank" aria-label="VK">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.19c.136-.145.132-.418.132-.418s-.02-1.28.574-1.47c.585-.185 1.336 1.24 2.13 1.79.605.415 1.062.325 1.062.325l2.132-.03s1.114-.068.586-.944c-.043-.073-.307-.647-1.578-1.828-1.331-1.24-1.152-1.04.45-3.187.978-1.307 1.368-2.106 1.246-2.448-.116-.324-.832-.24-.832-.24l-2.4.015s-.178-.024-.31.055c-.13.078-.212.258-.212.258s-.382 1.018-.892 1.884c-1.076 1.83-1.507 1.928-1.683 1.813-.408-.265-.305-1.06-.305-1.628 0-1.77.267-2.51-.523-2.702-.263-.063-.456-.105-1.128-.112-.863-.009-1.592.003-2.005.205-.275.134-.488.434-.358.451.16.021.521.098.712.362.248.34.239 1.104.239 1.104s.142 2.085-.332 2.344c-.325.178-.77-.185-1.728-1.85-.49-.847-.86-1.784-.86-1.784s-.071-.176-.198-.271c-.153-.115-.366-.151-.366-.151l-2.28.015s-.343.01-.469.158c-.113.132-.008.404-.008.404s1.783 4.172 3.803 6.274c1.852 1.926 3.957 1.797 3.957 1.797z"/></svg>
+        </a>
+        <a href="https://t.me/HBeyka" target="_blank" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </a>
+        <a href="https://instagram.com/beyshkrunya" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="contacts__right">
+      <div class="coin">
+        <div class="coin__side coin__side--front">
+          <img src="images/logo.svg" alt="WabiSabi">
+          <span class="coin__shine"></span>
+        </div>
+        <div class="coin__side coin__side--back">
+          <img src="images/logo.svg" alt="WabiSabi">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ВОЛНА -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 Q30,5 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 T1260,20 T1320,20 T1380,20 T1440,20" fill="none" stroke="#8a857d" stroke-width="1.2"/>
+  </svg>
+</div>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="/" class="footer__logo">WabiSabi</a>
+    <nav class="footer__nav">
+      <a href="#about">о нас</a>
+      <a href="#directions">направления</a>
+      <a href="#gallery">галерея</a>
+      <a href="#schedule">расписание</a>
+      <a href="#prices">стоимость</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ (С Formspree) -->
+<div class="modal" id="modal-signup">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__content">
+    <button class="modal__close" data-close>×</button>
+    <h3 class="modal__title">Записаться на занятие</h3>
+    <p class="modal__subtitle">Оставьте заявку — мы перезвоним.</p>
+    
+    <form class="modal__form" id="signup-form" action="https://formspree.io/f/mzeewqvn" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <select name="direction">
+        <option value="">Выберите направление</option>
+        <option>Hip-Hop</option>
+        <option>Contemporary</option>
+        <option>K-pop</option>
+        <option>Jazz-Funk</option>
+      </select>
+      <button type="submit" class="btn-primary">Отправить заявку</button>
+    </form>
+    <p class="modal__success" id="signup-success">✅ Спасибо! Мы скоро свяжемся с вами.</p>
+  </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ВИДЕО -->
+<div class="modal modal--video" id="modal-video">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__content modal__content--video">
+    <button class="modal__close" data-close>×</button>
+    <div class="video-wrap">
+      <iframe id="video-frame" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
