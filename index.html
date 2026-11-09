@@ -14,7 +14,6 @@
 </head>
 <body>
 
-<!-- Искры на фоне -->
 <div class="sparkles" aria-hidden="true">
   <span class="sparkle" style="top:8%;  left:6%;  animation-delay:0s;"></span>
   <span class="sparkle" style="top:22%; left:92%; animation-delay:0.8s;"></span>
@@ -26,7 +25,6 @@
   <span class="sparkle" style="top:65%; left:52%; animation-delay:0.6s;"></span>
 </div>
 
-<!-- ШАПКА -->
 <header class="header">
   <div class="container header__inner">
     <a href="/" class="header__logo">WabiSabi</a>
@@ -48,7 +46,6 @@
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero__parallax">
     <img src="images/hero.jpg" alt="" class="hero__bg">
@@ -66,7 +63,6 @@
   </div>
 </section>
 
-<!-- О НАС -->
 <section class="about reveal" id="about">
   <div class="container about__inner">
     <div class="about__left">
@@ -90,7 +86,6 @@
   </div>
 </section>
 
-<!-- НАПРАВЛЕНИЯ -->
 <section class="directions reveal" id="directions">
   <div class="container">
     <p class="section-label section-label--light">✦ направления</p>
@@ -119,7 +114,6 @@
   </div>
 </section>
 
-<!-- ГАЛЕРЕЯ -->
 <section class="gallery reveal" id="gallery">
   <div class="container">
     <p class="section-label section-label--light">✦ галерея</p>
@@ -137,7 +131,6 @@
   </div>
 </section>
 
-<!-- РАСПИСАНИЕ НА ВСЕ ДНИ -->
 <section class="schedule reveal" id="schedule">
   <div class="container">
     <p class="section-label">расписание</p>
@@ -195,7 +188,6 @@
   </div>
 </section>
 
-<!-- ЦЕНЫ -->
 <section class="prices reveal" id="prices">
   <div class="container">
     <div class="prices__head">
@@ -229,7 +221,6 @@
   </div>
 </section>
 
-<!-- КОНТАКТЫ -->
 <section class="contacts reveal" id="contacts">
   <div class="container contacts__inner">
     <div class="contacts__left">
@@ -267,14 +258,12 @@
   </div>
 </section>
 
-<!-- ВОЛНА -->
 <div class="wave-divider">
   <svg viewBox="0 0 1440 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,20 Q30,5 60,20 T120,20 T180,20 T240,20 T300,20 T360,20 T420,20 T480,20 T540,20 T600,20 T660,20 T720,20 T780,20 T840,20 T900,20 T960,20 T1020,20 T1080,20 T1140,20 T1200,20 T1260,20 T1320,20 T1380,20 T1440,20" fill="none" stroke="#8a857d" stroke-width="1.2"/>
   </svg>
 </div>
 
-<!-- ФУТЕР -->
 <footer class="footer">
   <div class="container footer__inner">
     <a href="/" class="footer__logo">WabiSabi</a>
@@ -288,7 +277,6 @@
   </div>
 </footer>
 
-<!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ (С Formspree) -->
 <div class="modal" id="modal-signup">
   <div class="modal__overlay" data-close></div>
   <div class="modal__content">
@@ -296,7 +284,7 @@
     <h3 class="modal__title">Записаться на занятие</h3>
     <p class="modal__subtitle">Оставьте заявку — мы перезвоним.</p>
     
-    <form class="modal__form" id="signup-form" action="https://formspree.io/f/mzeewqvn" method="POST">
+    <form class="modal__form" id="signup-form">
       <input type="text" name="name" placeholder="Ваше имя" required>
       <input type="tel" name="phone" placeholder="Телефон" required>
       <select name="direction">
@@ -312,7 +300,6 @@
   </div>
 </div>
 
-<!-- МОДАЛЬНОЕ ОКНО ВИДЕО -->
 <div class="modal modal--video" id="modal-video">
   <div class="modal__overlay" data-close></div>
   <div class="modal__content modal__content--video">
@@ -323,6 +310,7 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
